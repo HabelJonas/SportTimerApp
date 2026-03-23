@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sport Timer</string>
+    <string name="notification_channel_name">Workout session</string>
+    <string name="notification_channel_description">Shows the currently running workout timer.</string>
+    <string name="notification_workout_idle">Workout timer idle</string>
+    <string name="notification_paused">Paused</string>
+    <string name="notification_finished">Workout complete</string>
+    <string name="foreground_service_workout_subtype">Runs an actively user-started workout interval timer while the app is backgrounded.</string>
+</resources>

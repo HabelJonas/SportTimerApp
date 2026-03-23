@@ -1,0 +1,31 @@
+Problem:
+- Intervalle können nicht gespeichert werden
+- Mehrere Profile müssen unerstützt werden
+- App kann nicht im Hintergrund laufen
+- Werbung zu penetrant
+- Toneinstellungen für zwischentöne schlecht
+
+Vortile die sich ergeben aus Nutzung der App:
+- Schafft den rahmen für hiit Trainings Anleitung
+- Training wird strukturiert
+- Kann felxibel Musik auswählen und steuern während der 'timer' weiter läuft
+- Programme können schneller gewechselt werden
+
+
+Features:
+- Timer Profile können erstellt, bearbeitet und gelöscht werden
+- Ein Timer Profil kann angewendet werden
+- Ein Timer Profil besteht aus 
+	- einer  Vorbereitungszeit ( läuft ab sobald das Profil gestartet wird )
+	- einer Übungszeit (Dauer eines einzelnen Übungsintervalls)
+	- einer Pausenzeit (die Zeit zwischen den Pausen)
+	- Wiederholungen (Anzahl wie oft Übungszeit und Pausenzeit ablaufen)
+- Die Zeiten können in Sekunden Schritten eingestellt werden
+- In den letzten 3 Sekunden jeder Zeit wird ein countdown mit finalen Singnalton abgespielt
+- Nach ablauf der Wiederholungen wir ein Siegeston abgespielt
+- Die App läuft im Hintergrund parallell zu anderen Musikquellen auf dem handy
+
+3 Activities: 
+- Übersicht mit anlage der Trainings-Profile
+- Erstellen/Bearbeiten Screen der Profile
+- Abspiel Screen eines Profils

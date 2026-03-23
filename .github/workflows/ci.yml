@@ -1,0 +1,40 @@
+name: Android CI
+
+on:
+  push:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Ensure Gradle wrapper is executable
+        run: chmod +x ./gradlew
+
+      - name: Assemble debug build
+        run: ./gradlew assembleDebug
+
+      - name: Run unit tests
+        run: ./gradlew test
+
+#      - name: Run instrumented tests on emulator
+#        uses: reactivecircus/android-emulator-runner@v2
+#        with:
+#          api-level: 35
+#          arch: x86_64
+#          profile: pixel_6
+#          disable-animations: true
+#          script: ./gradlew connectedAndroidTest
+
